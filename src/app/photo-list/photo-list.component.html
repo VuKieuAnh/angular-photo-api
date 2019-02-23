@@ -1,0 +1,15 @@
+<h1>Đây là trang photo</h1>
+<ul>
+  <li *ngFor="let photo of photos; index as i">
+    <h3>
+      <!--<a [routerLink]="['/photo', photo.id]">-->
+        Photo Title: {{photo.title}}
+      <!--</a>-->
+    </h3>
+    <img [src]="photo.url"/>
+    <div>
+      <!--<button [routerLink]="['/photo', photo.id, 'edit']">Edit</button>-->
+      <!--<button (click)="deletePhoto(i)">Delete</button>-->
+    </div>
+  </li>
+</ul>
